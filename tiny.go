@@ -19,7 +19,6 @@ func main() {
         http.HandleFunc("/", port)
         // it will fail if the command-line flag is not a port number
         // not the most efficient string concat but speed is not the target
-        // http.ListenAndServe(":" + *portPtr, nil)
         if err := http.ListenAndServe(":" + *portPtr, nil);err != nil {
                 log.Fatal("ListenAndServe: ", err)
         }
