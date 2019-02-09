@@ -1,1 +1,1 @@
-CGO_ENABLED=0 go build -ldflags "-s" tiny.go
+env GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build tiny.go
