@@ -1,5 +1,5 @@
 # build container
-FROM mirror.gcr.io/library/golang as builder
+FROM golang as builder
 
 ENV DISTRIBUTION_DIR /go/src/github.com/rolinux/tiny
 
